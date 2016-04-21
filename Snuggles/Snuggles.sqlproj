@@ -63,26 +63,28 @@
     <Folder Include="Tables" />
     <Folder Include="Tables\Lookups" />
     <Folder Include="Tables\Entities" />
+    <Folder Include="PostDeploy" />
   </ItemGroup>
   <ItemGroup>
-    <Build Include="Tables\Entities\Item.sql" />
-    <Build Include="Tables\Entities\ItemImage.sql" />
-    <Build Include="Tables\Entities\ItemPrice.sql" />
-    <Build Include="Tables\Entities\Supplier.sql" />
-    <Build Include="Tables\Entities\SupplierAddress.sql" />
+    <Build Include="Tables\Entities\Package.sql" />
+    <Build Include="Tables\Entities\WarehouseAddress.sql" />
     <Build Include="Tables\Entities\Warehouse.sql" />
     <Build Include="Tables\Lookups\LkpUSState.sql" />
-    <Build Include="Tables\Lookups\LkpItemStatus.sql" />
+    <Build Include="Tables\Lookups\LkpPackageStatus.sql" />
     <Build Include="Tables\Lookups\LkpSecondaryUnit.sql" />
-    <Build Include="Tables\Entities\SupplierContact.sql" />
-    <Build Include="Tables\Entities\SupplierContactPhone.sql" />
-    <Build Include="Tables\Entities\WarehouseItem.sql" />
+    <PostDeploy Include="PostDeploy\SeedTableData.sql" />
+    <Build Include="Tables\Lookups\LkpWarehouseAvailability.sql" />
+    <Build Include="Tables\Entities\PackageReturnAddress.sql" />
+    <Build Include="Tables\Entities\AuthorizeToPickup.sql" />
+    <Build Include="Tables\Entities\PackageNote.sql" />
+    <Build Include="Tables\Lookups\LkpPickupRelation.sql" />
+    <Build Include="Tables\Entities\Customer.sql" />
+    <Build Include="Tables\Entities\CustomerPackage.sql" />
   </ItemGroup>
   <ItemGroup>
     <RefactorLog Include="Snuggles.refactorlog" />
   </ItemGroup>
   <ItemGroup>
-    <Build Include="Tables\Lookups\LkpPriceType.sql" />
-    <Build Include="Tables\Lookups\LkpSupplierType.sql" />
+    <Build Include="Tables\Lookups\LkpPackageType.sql" />
   </ItemGroup>
 </Project>

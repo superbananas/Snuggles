@@ -1,8 +1,8 @@
-﻿CREATE TABLE [dbo].[LkpUSState]
+﻿CREATE TABLE [dbo].[LkpPickupRelation]
 (
-	[USStateId] INT NOT NULL CONSTRAINT PK_STATEID PRIMARY KEY, 
+	[PickupRelationId] INT NOT NULL CONSTRAINT PK_PickupRelationID PRIMARY KEY, 
 	[Enumeration] VARCHAR(25) NOT NULL, 
-	[Caption] VARCHAR(2) NOT NULL, 
+	[Caption] VARCHAR(25) NOT NULL, 
 	[Description] VARCHAR(100) NOT NULL, 
 	[CreateDate] DATETIME NOT NULL DEFAULT GetDate(), 
 	[LastModified] DATETIME NOT NULL DEFAULT GetDate()
