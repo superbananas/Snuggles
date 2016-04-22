@@ -1,35 +1,35 @@
 ﻿/* Lookup table data values */
 
-Insert into LkpWarehouseAvailability
+Insert into LkpWarehouseAvailability (WarehouseAvailabilityId, Enumeration, Caption, Description)
 Select 0, 'Inactive', 'Inactive', 'Inactive' Union All
 Select 1, 'Active', 'Active', 'Active'
-
-Insert into LkpPackageStatus
+GO
+Insert into LkpPackageStatus (PackageStatusId, Enumeration, Caption, Description)
 Select 0, 'Unknown', 'Unknown', 'Unknown' Union All
 Select 1, 'Waiting', 'Waiting', 'Waiting to Recieve' Union All
 Select 2, 'InProcess', 'InProcess', 'In Process' Union All
 Select 3, 'Delivered', 'Delivered', 'Delivered' Union All
 Select 4, 'Returned', 'Returned', 'Returned'
-
-Insert into LkpPackageType
+GO
+Insert into LkpPackageType (PackageTypeId, Enumeration, Caption, Description)
 Select 0, 'Other', 'Other', 'Other' Union All
 Select 1, 'Envelope', 'Envelope', 'Envelope' Union All
 Select 2, 'Box', 'Box', 'Box' 
-
-Insert into LkpPickupRelation
+GO
+Insert into LkpPickupRelation (PickupRelationId, Enumeration, Caption, Description)
 Select 0, 'Other', 'Other', 'Other' Union All
 Select 1, 'Parent', 'Parent', 'Parent' Union All
 Select 2, 'Sibling', 'Sibling', 'Sibling' Union All
 Select 3, 'Spouse', 'Spouse', 'Spouse'
-
-Insert into LkpSecondaryUnitType
-Select 0 'None', 'None', 'None' Union All
-Select 1 'Apartment', 'Apt', 'Appartment' Union All
-Select 2 'Suite', 'STE', 'Suite' Union All
-Select 3 'Unit', 'Unit', 'Unit'
-
-Insert into LkpUSState
-Select 0 'NotSelected', '', 'Not Selected' Union All
+GO
+Insert into LkpSecondaryUnitType (SecondaryUnitTypeId, Enumeration, Caption, Description)
+Select 0, 'None', 'None', 'None' Union All
+Select 1, 'Apartment', 'Apt', 'Appartment' Union All
+Select 2, 'Suite', 'STE', 'Suite' Union All
+Select 3, 'Unit', 'Unit', 'Unit'
+GO
+Insert into LkpUSState (USStateId, Enumeration, Caption, Description)
+Select 0, 'NotSelected', '', 'Not Selected' Union All
 Select 1, 'Alabama','AL','Alabama' Union All
 Select 2, 'Alaska','AK','Alaska' Union All
 Select 3, 'AmericaSamoa','AS','American Samoa' Union All
@@ -89,3 +89,4 @@ Select 56, 'Washington','WA','Washington' Union All
 Select 57, 'WestVirginia','WV','West Virginia' Union All
 Select 58, 'Wisconsin','WI','Wisconsin' Union All
 Select 59, 'Wyoming','WY','Wyoming'
+GO
