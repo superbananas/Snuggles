@@ -91,4 +91,11 @@
     <Property Name="ParentElementType" Value="SqlTable" />
     <Property Name="NewName" Value="SupplierContactPhoneId" />
   </Operation>
+  <Operation Name="Rename Refactor" Key="577684aa-b29b-4fd3-a541-6381f81fc37c" ChangeDateTime="04/21/2016 05:18:32">
+    <Property Name="ElementName" Value="[dbo].[PackageReturnAddress].[LastUpdate]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[dbo].[PackageReturnAddress]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="[LastModified]" />
+  </Operation>
 </Operations>
