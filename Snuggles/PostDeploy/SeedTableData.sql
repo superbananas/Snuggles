@@ -1,8 +1,11 @@
 ﻿/* Lookup table data values */
-
+Delete from LkpWarehouseAvailability
+GO
 Insert into LkpWarehouseAvailability (WarehouseAvailabilityId, Enumeration, Caption, Description)
 Select 0, 'Inactive', 'Inactive', 'Inactive' Union All
 Select 1, 'Active', 'Active', 'Active'
+GO
+Delete from LkpPackageStatus
 GO
 Insert into LkpPackageStatus (PackageStatusId, Enumeration, Caption, Description)
 Select 0, 'Unknown', 'Unknown', 'Unknown' Union All
@@ -11,10 +14,14 @@ Select 2, 'InProcess', 'InProcess', 'In Process' Union All
 Select 3, 'Delivered', 'Delivered', 'Delivered' Union All
 Select 4, 'Returned', 'Returned', 'Returned'
 GO
+Delete from LkpPackageType
+GO
 Insert into LkpPackageType (PackageTypeId, Enumeration, Caption, Description)
 Select 0, 'Other', 'Other', 'Other' Union All
 Select 1, 'Envelope', 'Envelope', 'Envelope' Union All
 Select 2, 'Box', 'Box', 'Box' 
+GO
+Delete from LkpPickupRelation
 GO
 Insert into LkpPickupRelation (PickupRelationId, Enumeration, Caption, Description)
 Select 0, 'Other', 'Other', 'Other' Union All
@@ -22,11 +29,15 @@ Select 1, 'Parent', 'Parent', 'Parent' Union All
 Select 2, 'Sibling', 'Sibling', 'Sibling' Union All
 Select 3, 'Spouse', 'Spouse', 'Spouse'
 GO
+Delete from LkpSecondaryUnitType
+GO
 Insert into LkpSecondaryUnitType (SecondaryUnitTypeId, Enumeration, Caption, Description)
 Select 0, 'None', 'None', 'None' Union All
 Select 1, 'Apartment', 'Apt', 'Appartment' Union All
 Select 2, 'Suite', 'STE', 'Suite' Union All
 Select 3, 'Unit', 'Unit', 'Unit'
+GO
+Delete from LkpUSState
 GO
 Insert into LkpUSState (USStateId, Enumeration, Caption, Description)
 Select 0, 'NotSelected', '', 'Not Selected' Union All
